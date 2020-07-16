@@ -29,6 +29,6 @@ OBS:
 -   Tive que criar Tabelas de ligação para filme x atores e filmes x diretores pois um diretor pode ser de varios Filmes e um filme pode ter varios diretores, o mesmo com atores.
 -   É necessario cadastrar nessas tabelas de ligação, já esta pronto todas as rotas no postman! :)
 
--   Fiz o teste unitario para rodar basta executar o comando: "./vendor/bin/phpunit"
+-   Fiz o teste unitario para rodar basta executar o comando: "./vendor/bin/phpunit", não fiz de todos os controllers.
 
 -   Em caso de duvidas, estarei a disposição!
