@@ -11,7 +11,7 @@
 
 ## Configuração
 
-Abra o cmd e rode o comando: git clone https://github.com/leandro-sales-ls/desafio-magic-web-design.git
+Abra o terminal e rode o comando: git clone https://github.com/leandro-sales-ls/desafio-magic-web-design.git
 
 Configure o ".env" com as informações do banco que deseja utilizar, informando o DB_CONNECTION, DB_HOST,DB_PORT, DB_DATABASE, DB_USERNAME e DB_PASSWORD.
 
