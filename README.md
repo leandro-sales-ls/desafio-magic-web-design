@@ -27,7 +27,7 @@ OBS:
 
 -   Rode as rotas na sequência.
 -   Tive que criar tabelas de ligação para filme x atores e filmes x diretores pois um diretor pode ser de varios filmes e um filme pode ter varios diretores, o mesmo com atores.
--   É necessario cadastrar nessas tabelas de ligação, já esta pronto todas as rotas no postman! :)
+-   É necessario cadastrar nessas tabelas de ligação, na pasta "collections postman" tem as collections para importar no postman com todas as rotas.
 
 -   Fiz o teste unitario para rodar basta executar o comando: "./vendor/bin/phpunit", não fiz de todos os controllers.
 
