@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Vendas;
-use App\Repositories\VendasRepository;
+use App\Compras;
+use App\Repositories\ComprasRepository;
 
-class DiretorController extends Controller
+class ComprasController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,9 @@ class DiretorController extends Controller
      */
     public function index()
     {
-        $repository = new VendasRepository;
-        $vendas = $repository->findAll();
-        return $vendas;
+        $repository = new ComprasRepository;
+        $compras = $repository->findAll();
+        return $compras;
     }
 
     /**
@@ -30,22 +30,22 @@ class DiretorController extends Controller
     {
         try {
             $error = "";
-            $venda = "";
+            $compras = "";
             $data = $request->all();
             $msg = $this->validacaoCampos($data);
             if (!empty($msg)) {
                 $error=$msg;
             } else {
-                $venda = new Vendas;
-                $venda->fill($data);
-                $venda->save();
+                $compras = new Compras;
+                $compras->fill($data);
+                $compras->save();
             }
         } catch(\Exception $e) {
             $error='Erro ao salvar Filme' . $e;
         }
         return response()->json([
             'error' => $error,
-            'data'  => $venda
+            'data'  => $compras
         ]);
     }
 
@@ -57,10 +57,9 @@ class DiretorController extends Controller
      */
     public function show($id)
     {
-        $repository = new VendasRepository;
-        $venda = $repository->find($id);
-        return $venda;
+        $repository = new ComprasRepository;
+        $compras = $repository->find($id);
+        return $compras;
     }
-
 
 }

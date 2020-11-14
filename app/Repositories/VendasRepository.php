@@ -2,18 +2,19 @@
 
 namespace App\Repositories;
 
-use App\Atores;
+use App\Vendas;
 
-class AtoresRepository
+class VendasRepository
 {
 
 	public function findAll()
 	{
-        return  Atores::all();
+        return  Vendas::all();
 	}
 
     public function find($id)
 	{
-		return Atores::where('id', $id)->get();
+		return Vendas::where('id', $id)->get();
     }
+
 }
